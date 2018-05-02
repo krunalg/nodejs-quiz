@@ -1,0 +1,29 @@
+<% include ./header.ejs %>
+	<div class="container">
+		<div class="card text-center">
+            <div class="card-header">
+                Demo Quiz
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><%= question %></h5><div class="row">
+						<div class="col-8 quizForm">
+							<form method="post" action="/quiz/next">
+								<div class="form-control">
+									<div class="radio">
+										<% options.forEach(function(option,index){ %>
+										<label class="radio">
+										 <input required  type="radio" name="optradio" value=<%= index + 1 %>>&nbsp;<%= option %></label>
+										<% })%>
+									</div>
+									<input type="submit" class="btn btn-success" value="Next">
+								</div>
+							</form>
+						</div>
+					</div>
+            </div>
+            <div class="card-footer text-muted">
+                &nbsp;
+            </div>
+        </div>
+	</div>
+<% include ./footer.ejs %>

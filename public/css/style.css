@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  font-weight: 300;
+}
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+.container h1{
+    margin-bottom: 50px;
+}
+.container .quizForm{
+    margin: auto;
+    padding:5px;
+}
+div.radio label.radio{
+    margin:20px;
+}
